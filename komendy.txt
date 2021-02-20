@@ -5,4 +5,4 @@ git add . / -a / -all
 git commit -a -m   -a wszystkie sledzone kommituje, nie stagowanych "add owanych" nie 
 
 git mv plik nowy_plik
-git checkout -- plik - przywracania wersja z poprzedniego commitu
+git checkout -- plik - przywracania wersja z poprzedniego commitu / np usuwam wpis/modyfikuje - checkout to taki rollback
