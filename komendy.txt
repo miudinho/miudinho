@@ -6,3 +6,4 @@ git commit -a -m   -a wszystkie sledzone kommituje, nie stagowanych "add owanych
 
 git mv plik nowy_plik
 git checkout -- plik - przywracania wersja z poprzedniego commitu / np usuwam wpis/modyfikuje - checkout to taki rollback
+git reset 
