@@ -9,3 +9,4 @@ git checkout -- plik - przywracania wersja z poprzedniego commitu / np usuwam wp
 git reset 
 git clone source dest
 w pliku .gitignore sa niesledzone pliki. Plik ktory jest sledzony/stagingowany nie moze zostac dodany do .gitignore - to nie zadziala
+git commit --amend  zmiana ostatniego komenta 
