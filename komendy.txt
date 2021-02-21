@@ -8,3 +8,4 @@ git mv plik nowy_plik
 git checkout -- plik - przywracania wersja z poprzedniego commitu / np usuwam wpis/modyfikuje - checkout to taki rollback
 git reset 
 git clone source dest
+w pliku .gitignore sa niesledzone pliki. Plik ktory jest sledzony/stagingowany nie moze zostac dodany do .gitignore - to nie zadziala
