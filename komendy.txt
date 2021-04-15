@@ -1,3 +1,5 @@
+Super2github !
+
 repozyterium - historia wszystkich zmian, relacje miedzy kommitami/strukturami/
 commit = snapshot - zapisanie stanu repo/projektu
 
