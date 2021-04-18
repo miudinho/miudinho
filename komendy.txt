@@ -16,14 +16,19 @@ sledzony zmodyfikowany - w repo i zmieniony ( w folderze roboczym )
 w poczekalni ( git add ) - oczekuje na commita
 
 git status
+git log git log--online
+git diff
 git log git log--online git log --stat
 git diff - roznica w plikach w w katalogo roboczym a to co w indexie(stagingu)
 git add . / -a / -all 
 git commit -a -m   -a wszystkie sledzone kommituje, nie stagowanych "add owanych" nie 
+
 git show 
 git rm plik - usuwa z kat roboczego i indeksu
 git rm --ceched pli - usuwa z indeksu
 git mv plik nowy_plik
+git checkout -- plik - przywracania wersja z poprzedniego commitu / np usuwam wpis/modyfikuje - checkout to taki rollback
+git reset 
 git checkout -- plik - przywracania z indeksu  / np usuwam wpis/modyfikuje - checkout to taki rollback np git checkout -- *.txt git checkout HEAD -- plik przywracanie z ostatniego commita , git checkout commit_id 
 git reset - usuwa pliki ze stagingu ( sa nadal sledzone ) przywracanie do stanu po ostatnim kommicie ( wszystko w staging area ) juz sie tu nie znajduje
 git clone source dest
@@ -39,4 +44,3 @@ git checkout nazwa_x_brancha - przelaczenie pomiedzy branch
 git merge nazwa_brncha - laczenie tej gdzie jestesmy ze wskazana 
 git push - wysylamy nasze repo do glownego - aktualizacja 
 git pull - sciagamy update z glownego repo ( git hub czy cos ) 
-
