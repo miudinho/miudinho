@@ -87,7 +87,7 @@ resource "aws_instance" "dev_node" {
   vpc_security_group_ids = [aws_security_group.mtc_security_group.id]
   subnet_id = aws_subnet.mtc_public_subnet.id
   #bootstrap conten of the file below - installing etc. 
-  user_data = file("userdata.tpl")
+  user_data = file("input_file.tpl")
 
   #root_block_device {
   #  volume_size = 10
