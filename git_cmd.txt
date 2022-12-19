@@ -1,0 +1,31 @@
+git add - add to staging
+git status 
+git rm
+
+
+.keep/ - add file permanently - git rm -f file - to remove 
+
+git status -s 
+D -deleted
+? - not tracked 
+AM - staged/added, modiffied 
+D - deleted
+git status -v 
+
+commit - in .git/commit_editing file 
+commit -a m 
+
+.git/info/exclude 
+.gitignore 
+git check-ignore   
+
+git tag -a version_01 -m info 
+git tag tag_name -m info
+git tag -d version_01 
+
+branches 
+git log --oneline --decorate 
+
+
+git push origin man - gdzie_jestem cel
+git pull cel - gdzie jestem 
