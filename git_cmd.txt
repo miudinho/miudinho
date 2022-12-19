@@ -29,3 +29,7 @@ git log --oneline --decorate
 
 git push origin man - gdzie_jestem cel
 git pull cel - gdzie jestem 
+
+
+git merge branch_name_to_marge_with_current_branch
+git branch -d branch_to_remove
