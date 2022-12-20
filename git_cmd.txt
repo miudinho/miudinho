@@ -25,7 +25,7 @@ git tag -d version_01
 
 branches 
 git log --oneline --decorate 
-
+git log -s / -v 
 
 git push origin man - gdzie_jestem cel
 git pull cel - gdzie jestem 
@@ -47,3 +47,4 @@ git revert HEAD~2 - revert to 2 commites belove current head
 
 git diff 
 git diff --sumary cmt_no_1 cmt_no_2
+git diff HEAD^ HEAD
