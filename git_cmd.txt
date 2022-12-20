@@ -33,3 +33,11 @@ git pull cel - gdzie jestem
 
 git merge branch_name_to_marge_with_current_branch
 git branch -d branch_to_remove
+
+
+merget conflict:
+<<< HEAD - last commit to the file 
+===== - below is the other branch
+>>> 
+
+git rebase source_branche_name - merge source_branche with current branche on top of commits - other log spec. better for local task 
