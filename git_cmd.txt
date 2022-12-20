@@ -26,6 +26,8 @@ git tag -d version_01
 branches 
 git log --oneline --decorate 
 git log -s / -v 
+git log --since=1 / git log --since="1 day ago"/"1 hour ago"
+git log --stat
 
 git push origin man - gdzie_jestem cel
 git pull cel - gdzie jestem 
