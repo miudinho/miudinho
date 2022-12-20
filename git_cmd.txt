@@ -44,3 +44,6 @@ git rebase source_branche_name - merge source_branche with current branche on to
 
 git revert HEAD - restore file to commit before last ( commit ) 
 git revert HEAD~2 - revert to 2 commites belove current head 
+
+git diff 
+git diff --sumary cmt_no_1 cmt_no_2
