@@ -13,7 +13,7 @@ D - deleted
 git status -v 
 
 commit - in .git/commit_editing file 
-commit -a m 
+commit -a m - add to stage and add measage 
 
 .git/info/exclude 
 .gitignore 
@@ -41,3 +41,6 @@ merget conflict:
 >>> 
 
 git rebase source_branche_name - merge source_branche with current branche on top of commits - other log spec. better for local task 
+
+git revert HEAD - restore file to commit before last ( commit ) 
+git revert HEAD~2 - revert to 2 commites belove current head 
