@@ -32,8 +32,9 @@ git reset
 git checkout -- plik - przywracania z indeksu  / np usuwam wpis/modyfikuje - checkout to taki rollback np git checkout -- *.txt git checkout HEAD -- plik przywracanie z ostatniego commita , git checkout commit_id 
 git reset - usuwa pliki ze stagingu ( sa nadal sledzone ) przywracanie do stanu po ostatnim kommicie ( wszystko w staging area ) juz sie tu nie znajduje
 git clone source dest
-git commit -amend - zmiana ostatniego komentarza 
+
 w pliku .gitignore sa niesledzone pliki. Plik ktory jest sledzony/stagingowany nie moze zostac dodany do .gitignore - to nie zadziala
+
 git commit --amend  zmiana ostatniego komenta 
 git cat-file -p object_file_namehash_object(.gitconfig/objects/project_file_name
              -t (type)
@@ -46,5 +47,6 @@ git remote -v
 git checkout nazwa_x_brancha - przelaczenie pomiedzy branch 
 git merge nazwa_brncha - laczenie tej gdzie jestesmy ze wskazana 
 git push - wysylamy nasze repo do glownego - aktualizacja 
+git push origin main - push z lokalnego do remote 
 git push origin -d branch_name - usuwa w zdalnym repo | -D usuwa niezacommitowen zmiany na branch_name i kasuje branch_name
 git pull - sciagamy update z glownego repo ( git hub czy cos ) 
