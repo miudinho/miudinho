@@ -40,7 +40,11 @@ git cat-file -p object_file_namehash_object(.gitconfig/objects/project_file_name
 git nie tworzy obiektu ( w swoim repo ) pod wzgledem pliku tylko zawartosci czyli np dwa pliki o roznych nazwach ale tej samej zawartosci maja jeden wpis w repo(objects)
 git hash-object file_name
 git branch nazwa_galezi
+git branch -d branch_name 
+git branch -a
+git remote -v 
 git checkout nazwa_x_brancha - przelaczenie pomiedzy branch 
 git merge nazwa_brncha - laczenie tej gdzie jestesmy ze wskazana 
 git push - wysylamy nasze repo do glownego - aktualizacja 
+git push origin -d branch_name - usuwa w zdalnym repo | -D usuwa niezacommitowen zmiany na branch_name i kasuje branch_name
 git pull - sciagamy update z glownego repo ( git hub czy cos ) 
