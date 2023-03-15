@@ -50,3 +50,5 @@ git push - wysylamy nasze repo do glownego - aktualizacja
 git push origin main - push z lokalnego do remote 
 git push origin -d branch_name - usuwa w zdalnym repo | -D usuwa niezacommitowen zmiany na branch_name i kasuje branch_name
 git pull - sciagamy update z glownego repo ( git hub czy cos ) 
+git checkout -b test_branch
+git push --setup-upstream origin test_branch - push new local(pc) branch to remote(git repo) 
