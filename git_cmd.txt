@@ -34,6 +34,7 @@ git pull cel - gdzie jestem
 
 
 git merge branch_name_to_marge_with_current_branch
+<<<<<<< HEAD
 git branch -d branch_to_remove
 
 
@@ -50,3 +51,6 @@ git revert HEAD~2 - revert to 2 commites belove current head
 git diff 
 git diff --sumary cmt_no_1 cmt_no_2
 git diff HEAD^ HEAD
+=======
+git branch -d branch_to_remove
+>>>>>>> 690aa38 (update git_cmd)
