@@ -52,3 +52,4 @@ git push origin -d branch_name - usuwa w zdalnym repo | -D usuwa niezacommitowen
 git pull - sciagamy update z glownego repo ( git hub czy cos ) 
 git checkout -b test_branch
 git push --setup-upstream origin test_branch - push new local(pc) branch to remote(git repo) 
+git push synchro local with remote ( delete remote if diff from local ) 
