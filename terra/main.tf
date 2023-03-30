@@ -113,3 +113,24 @@ resource "aws_instance" "dev_node" {
     
 #  }
 #}
+
+
+resource "aws_instance" "dev_node_x" {
+    instance_type = "t2.medium"
+    ami = data.aws_ami.server_ami.id
+
+    tags = {
+        name = "dev-node"
+    }
+  
+  key_name = aws_key_pair.mtc_auth.id
+  vpc_security_group_ids = [aws_security_group.mtc_security_group.id]
+  subnet_id = aws_subnet.mtc_public_subnet.id
+    
+  user_data = file("dev_node_x_input_file.tpl")
+  
+  root_block_device {
+    # set in variables file 
+    volume_size = var.instance_root_block_device_size
+  }
+}
