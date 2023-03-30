@@ -76,7 +76,7 @@ resource "aws_key_pair" "mtc_auth" {
 
 
 resource "aws_instance" "dev_node" {
-    instance_type = "t2.micro"
+    instance_type = "t2.medium"
     ami = data.aws_ami.server_ami.id
 
     tags = {
@@ -89,8 +89,27 @@ resource "aws_instance" "dev_node" {
   #bootstrap conten of the file below - installing etc. 
   user_data = file("userdata.tpl")
 
-  root_block_device {
-    volume_size = 10
+  #root_block_device {
+  #  volume_size = 10
+  #}
 
+  root_block_device {
+    # set in variables file 
+    volume_size = var.instance_root_block_device_size
   }
+
+ provisioner "local-exec" {
+        #command = "echo $(self.private_ip) >> private_ips"
+        command = "echo test string to file local_file  >> private_ips"
+        #command = "get-Content -Path"
+        #using git bash localy
+        interpreter = ["bash", "-c"]
+  }
+
 }
+#resource "aws_instance" "dev_node" {
+#  provisioner "local-exec" {
+#        command = "echo The servier's IP address is $(self.private_ip)"
+    
+#  }
+#}
