@@ -114,7 +114,6 @@ resource "aws_instance" "dev_node" {
 #  }
 #}
 
-
 resource "aws_instance" "dev_node_x" {
     instance_type = "t2.medium"
     ami = data.aws_ami.server_ami.id
@@ -133,4 +132,4 @@ resource "aws_instance" "dev_node_x" {
     # set in variables file 
     volume_size = var.instance_root_block_device_size
   }
-}
+} 
