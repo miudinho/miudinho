@@ -10,7 +10,7 @@ data "aws_ami" "server_ami" {
     }
 }
 
-data "http" "www_ip" {
-    url = "http://target.me"
-    # data.http.www_ip.body
-}
+#data "http" "www_ip" {
+#    url = "http://target.me"
+#    # data.http.www_ip.body
+#}
