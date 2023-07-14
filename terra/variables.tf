@@ -1,4 +1,5 @@
 variable "instance_root_block_device_size" {
+<<<<<<< HEAD
   type      = string
   default   = "10"
   sensitive = false
@@ -20,3 +21,10 @@ variable "os_iso" {
   # centos 9
   default = "ami-06053084ac8dcedf6"
 }
+=======
+    type = string
+    default = "8"
+    sensitive = false
+    nullable = false
+}
+>>>>>>> fe6204a4eafe8a0b2de6902e62eb82ba00d9d8d0
